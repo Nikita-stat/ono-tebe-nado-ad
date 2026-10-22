@@ -14,32 +14,50 @@
       <nav class="navigation">
         <ul class="navigation-list">
           <li class="no-circle"><a class="nav-list-item-1" href="#0">главная</a></li>
-          <li><a class="nav-list-item-2" href="#0">посмореть лоты</a></li>
-          <li><a class="nav-list-item-3" href="#0">об аукционе</a></li>
+          <li><a class="nav-list-item-2" href="#lots">посмореть лоты</a></li>
+          <li><a class="nav-list-item-3" href="#about">об аукционе</a></li>
         </ul>
       </nav>
-      <div class="logo-black"><img src="./images/logo-black.svg"></div>
+      <a href="#0">
+        <div class="logo-black">
+          <img alt="логотип черный на белом фоне, надпись оно тебе надо" src="./images/logo-black.svg">
+        </div>
+      </a>
       <aside class="contact">
         <ul class="contact-list">
-          <li><p>+9 999 555 5555</p></li>
-          <li><p>info@sobaka.ge</p></li>
-          <li><p>наб. Принсергархт 263-265, Амстердам</p></li>
+          <li class="contact-number">+9 999 555 5555</li>
+          <li class="contact-mail">info@sobaka.ge</li>
+          <li class="contact-adress">наб. Принсергархт 263-265, Амстердам</li>
         </ul>
       </aside>
     </header>
     <main class="main">
       <section class="cover">
-
+        <img class="cover-back" src="./images/cover.jpg">
+        <div class="cover-overlay"></div>
+        <div class="title-grid">
+          <h2 class="title-grid-phrase-1">оно</h2>
+          <h2 class="title-grid-phrase-2">тебе</h2>
+          <h2 class="title-grid-phrase-3">надо</h2>
+        </div>
+        <div class="cover-description">
+          <p class="cover-phrase">Аукцион вещей, в которые никто не верил</p>
+          <div class="boarder-button"><p class="cover-button">сделать ставку</p></div>
+        </div>
       </section>
-      <section class="lots">
+      <section id="lots" class="lots">
         <h2 class="lots-title">лоты</h2>
         <div class="card-1">
+          <div class="card-overlay"></div>
+          <img alt="две руки в каждой по зеркалу" class= "card-1-img" src="./images/card-lot-01.jpg">
           <h2 class="title-card title-card-1">Фильм режиссёра, который бросил киношколу</h2>
           <p class="text-card text-card-1">Не просто бросил, а ушёл с первой лекции. 
             Какой была бы ваша ставка, если бы вы не знали, что режиссёр — Пол Томас Андерсон?
           </p>
         </div>
         <div class="card-2">
+          <div class="card-overlay"></div>
+          <img alt="обложка книги с автором Джеймс Уилс" class= "card-2-img" src="./images/card-lot-02.jpg">
           <h2 class="title-card title-card-2">Книга, где описан один скучный день из жизни рекламного агента</h2>
           <p class="text-card text-card-2">Объёмом почти в тысячу страниц. Иногда без знаков препинания и с переходами на 
             древнеанглийский. В ней одновременно рассказывается о 16 июня 1904 года и об истории литературы, 
@@ -48,6 +66,8 @@
           </p>
         </div>
         <div class="card-3">
+          <div class="card-overlay"></div>
+          <img alt="картина абстракция с геометрическими фигурами" class= "card-3-img" src="./images/card-lot-03.jpg">
           <h2 class="title-card title-card-3">Картина, которую повторит даже 5-летний сын маминой подруги</h2>
           <p class="text-card text-card-3">Ну действительно, там линия, тут кружочек, 
             а здесь и вовсе что-то похожее на инфузорию-туфельку. Никаких полей, лесов, котиков... 
@@ -56,7 +76,7 @@
         </div>
         <p class="lots-see-more">посмотреть больше</p>
       </section>
-      <section class="about">
+      <section id="about" class="about">
         <div class="black-circle">
           <div class="logo-white"></div>
         </div>
@@ -83,22 +103,22 @@
     <footer class="footer">
       <aside class="footer-contact">
         <ul class="footer-contact-list">
-          <li><p>+9 999 555 5555</p></li>
-          <li><p>info@sobaka.ge</p></li>
-          <li><p>наб. Принсергархт 263-265, Амстердам</p></li>
+          <li class="contact-number">+9 999 555 5555</li>
+          <li class="contact-mail">info@sobaka.ge</li>
+          <li class="contact-adress">наб. Принсергархт 263-265, Амстердам</li>
         </ul>
       </aside>
       <nav class="footer-navigation">
         <ul class="footer-navigation-list">
           <li><a class="footer-nav-list-item-1" href="#0">главная</a></li>
-          <li><a class="footer-nav-list-item-2" href="#0">посмореть лоты</a></li>
-          <li><a class="footer-nav-list-item-3" href="#0">об аукционе</a></li>
+          <li><a class="footer-nav-list-item-2" href="#lots">посмореть лоты</a></li>
+          <li><a class="footer-nav-list-item-3" href="#about">об аукционе</a></li>
         </ul>
       </nav>
       <div class="social-media-icon">
-        <img class="yt" src="./images/yt.svg">
-        <img class="vk" src="./images/vk.svg">
-        <img class="pinterest" src="./images/pinterest.svg">
+        <img alt="иконка ютуба" class="yt" src="./images/yt.svg">
+        <img alt="иконка вконтакте" class="vk" src="./images/vk.svg">
+        <img alt="иконка пинтереста" class="pinterest" src="./images/pinterest.svg">
       </div>
     </footer>
   </body>
