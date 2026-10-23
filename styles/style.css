@@ -2,21 +2,32 @@
 
 
 .header {
-    display: flex;
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
     width: 100%;
     height: 293px;
     flex-direction: row;
-    justify-content: space-around;
     align-items: center;
 }
 
 .navigation-list {
-    display: flex;
-    gap: 20px;
-    flex-direction: row;
-    justify-content: space-between;
-    align-content: center;
+    display: grid;
+    width: 391.5px;
+    grid-template-columns: 67px 299px;
+    align-items: center;
+    gap: calc((391.5px - 67px - 299px) / 2);
+    margin-left: 50px;
+}
+
+.navigation-list-item {
+    display: grid;
+    grid-template-columns: 169px 130px;
+    line-height: 21px;
+    font-weight: 400;
+    font-size: 18px;
     list-style-type: circle;
+    white-space: nowrap;
 }
 
 .no-circle {
@@ -25,21 +36,31 @@
 
 .nav-list-item-1,
 .footer-nav-list-item-1 {
+    line-height: 21px;
+    font-weight: 400;
+    font-size: 18px;
     text-decoration: none;
 }
 
 .nav-list-item-2,
 .nav-list-item-3 {
     text-decoration: underline;
+    text-decoration-skip-ink: none;
+    justify-self: center;
 }
 
 .logo-black {
+    position: absolute;
+    top: 92px;
+    left: 478px;
     width: 148px;
     height: 105px;
 
 }
 
 .contact {
+    align-self: center;
+    justify-self: center;
     width: 240px;
 
 }
@@ -55,10 +76,12 @@
 
 .contact-number {
     text-decoration: underline;
+    text-decoration-skip-ink: none
 }
 
 .contact-mail {
     text-decoration: underline;
+    text-decoration-skip-ink: none
 }
 
 .contact-list {
@@ -84,6 +107,7 @@
 
 .title-grid {
   position: absolute;
+  top: 165px;
   width: 1000px;                       
   height: 385px;                        
   z-index: 2;
@@ -97,7 +121,8 @@
 .title-grid-phrase-3 {
   font-weight: 700;
   font-size: 100px;
-  letter-spacing: 0.3em;                
+  line-height: 114.99999999999999%;
+  letter-spacing: 30%;                
   text-transform: uppercase;
   color: #fff;
 }
@@ -107,13 +132,17 @@
 }
 
 .title-grid-phrase-2 {
-  justify-self: center;               
-  align-self: center;               
+  justify-self: center;    
+  width: 339px;
+  height: 115px;           
+  align-self: center;
 }
 
 .title-grid-phrase-3 {
-  justify-self: end;                   
-  align-self: center;
+  justify-self: end;
+  height: 115px;
+  width: 387px;       
+  align-self: end;
 }
 
 .cover-description {
@@ -122,7 +151,7 @@
     justify-content: center;
     align-items: center;
     z-index: 2;
-    grid-template-columns: 3fr 1fr;
+    grid-template-columns: 744px 256px;
     top: 656px;
 }
 
@@ -288,6 +317,7 @@
     width: 693px;
     top: 133px;
     left: 359px;
+    gap: 24px;
 }
 
 .about-title {
@@ -302,6 +332,9 @@
 
 .about-text {
     position: absolute;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
     top: 150px;
 }
 
@@ -327,7 +360,7 @@
     margin-top: 180px;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
     width: 100%;
     height: 180px;
     align-items: start;
@@ -337,7 +370,17 @@
     list-style-type: none;
 }
 
+.footer-nav-list-item-1,
+.footer-nav-list-item-2,
+.footer-nav-list-item-3 {
+    font-weight: 400;
+    font-size: 18px;
+}
+
 .footer-navigation-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     list-style-type: none;
 }
 
